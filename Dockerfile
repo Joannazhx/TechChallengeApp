@@ -37,3 +37,6 @@ COPY conf.toml ./conf.toml
 COPY --from=build /TechChallengeApp TechChallengeApp
 
 ENTRYPOINT [ "./TechChallengeApp" ]
+
+# docker run -it --entrypoint sh servian/techchallengeapp:latest
+# docker run -p 3000:3000 servian/techchallengeapp:latest serve
